@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080711">
+  <meta name="description" content="XAN-SVA — Marketplace gamer para descubrir productos digitales de Roblox, Free Fire, Clash Royale y más.">
+  <title>XAN-SVA — Gamer Market | Tu próximo drop empieza aquí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2716%27 fill=%27%23080711%27/%3E%3Cpath d=%27M18 45 30 17h5l11 28M24 32h17%27 fill=%27none%27 stroke=%27%2375f0e2%27 stroke-width=%275%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="noise-layer"></div>
+
+  <div class="announcement-bar">
+    <span class="status-dot"></span>
+    <span>XAN-SVA · DIGITAL GOODS</span>
+    <span class="announcement-divider">/</span>
+    <span class="announcement-muted">Roblox · Free Fire · Clash Royale · y más</span>
+    <button class="announcement-close" id="closeAnnouncement" aria-label="Cerrar anuncio">×</button>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="XAN-SVA inicio">
+      <span class="brand-mark"><span></span><span></span><span></span></span>
+      <span class="brand-word">XAN-SVA<span class="brand-period">.</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a class="nav-link active" href="#market">Mercado</a>
+      <a class="nav-link" href="#categories">Categorías</a>
+      <a class="nav-link" href="#how-it-works">Cómo funciona</a>
+      <a class="nav-link" href="#faq">Ayuda</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" id="searchToggle" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg></button>
+      <button class="icon-button cart-button" id="cartToggle" aria-label="Abrir carrito">
+        <svg viewBox="0 0 24 24"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="button button-small button-outline" id="loginButton">WhatsApp ↗</button>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="search-panel" id="searchPanel">
+    <div class="search-panel-inner">
+      <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+      <input type="search" id="globalSearch" placeholder="Busca cuentas, objetos, monedas..." autocomplete="off">
+      <kbd>ESC</kbd>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil">
+    <a href="#market">Mercado <span>01</span></a>
+    <a href="#categories">Categorías <span>02</span></a>
+    <a href="#how-it-works">Cómo funciona <span>03</span></a>
+    <a href="#faq">Ayuda <span>04</span></a>
+  </nav>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> BIENVENIDO A XAN-SVA / DIGITAL GOODS</div>
+        <h1>TU MUNDO.<br><span class="gradient-text">TUS REGLAS.</span></h1>
+        <p class="hero-description">Tu punto de encuentro gamer. Explora productos y servicios para Roblox, Free Fire, Clash Royale y más universos, con catálogo visual, filtros inteligentes y atención directa.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#market">Ver catálogo <span class="button-arrow">↗</span></a>
+          <a class="text-link" href="#how-it-works">Cómo funciona <span>→</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack">
+            <span class="mini-avatar avatar-a">N</span><span class="mini-avatar avatar-b">X</span><span class="mini-avatar avatar-c">+</span>
+          </div>
+          <div><strong>Tu próximo drop empieza aquí</strong><small>Gaming · digital · comunidad</small></div>
+        </div>
+      </div>
+      <div class="hero-visual"><img class="hero-cover" src="https://images.squarespace-cdn.com/content/v1/5e7eaf7501b2e061b53d2525/f7a4da21-2c61-4727-8ce9-387c9b668737/lara048656_17075_gaming_industry_branding_0c3d0bb9-3a7a-4146-82aa-2f4ba7dbb9ec.png?format=1000w" alt="" loading="eager" onerror="this.classList.add('image-failed')">
+        <div class="hero-grid"></div>
+        <div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div>
+        <div class="hero-orb"><div class="orb-core"></div><div class="orb-ring"></div><div class="orb-sheen"></div></div>
+        <div class="floating-card floating-card-top"><span class="floating-icon">✦</span><span><small>DROP DESTACADO</small><strong>XAN-SVA SELECT</strong></span><span class="floating-arrow">↗</span></div>
+        <div class="floating-card floating-card-bottom"><span class="live-dot"></span><span><small>ESTADO DEL MERCADO</small><strong>Explora sin límites</strong></span></div>
+        <div class="hero-coordinate coordinate-one">XSV / 001</div><div class="hero-coordinate coordinate-two">DIGITAL ASSETS</div>
+        <div class="hero-spark spark-one">✧</div><div class="hero-spark spark-two">+</div><div class="hero-spark spark-three">✦</div>
+      </div>
+      <div class="hero-bottom-line"><span>01 — GAMER MARKET</span><span>JUEGA A TU MANERA</span><span>SCROLL PARA DESCUBRIR ↓</span></div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="trust-item"><span class="trust-symbol">◈</span><span>Catálogo curado</span></div>
+      <div class="trust-item"><span class="trust-symbol">⌁</span><span>Experiencia sencilla</span></div>
+      <div class="trust-item"><span class="trust-symbol">✳</span><span>Atención personalizada</span></div>
+      <div class="trust-item"><span class="trust-symbol">↗</span><span>Descubre novedades</span></div>
+    </section>
+
+    <section class="game-ticker section-shell" aria-label="Juegos disponibles">
+      <div class="ticker-label"><span class="status-dot"></span> ENTRA AL JUEGO</div>
+      <div class="ticker-track"><span>ROBLOX <b>✳</b></span><span>FREE FIRE <b>✳</b></span><span>CLASH ROYALE <b>✳</b></span><span>OTRAS <b>✳</b></span><span>XAN-SVA SELECT <b>✳</b></span><span>ARTÍCULOS DIGITALES <b>✳</b></span></div>
+    </section>
+
+    <section class="categories-section section-shell" id="categories">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> EXPLORA EL UNIVERSO</div><h2>Elige tu <span class="gradient-text">universo.</span></h2></div>
+        <p>Tres categorías gamer principales y una sección Otras para artículos variados. Encuentra lo que buscas y consulta la disponibilidad.</p>
+      </div>
+      <div class="category-grid category-grid-expanded">
+        <button class="category-card category-accounts game-category-card" data-category="Roblox" style="--category-gradient:linear-gradient(135deg,#ff6a75,#ffb45b)"><img class="category-cover" src="https://tse1.mm.bing.net/th?adlt=moderate&mkt=en-US&pid=Api&q=roblox+drawing+game+2" alt="" loading="lazy" onerror="this.classList.add('image-failed')"><span class="category-number">01 / ROBLOX</span><span class="category-art">▣</span><span class="category-title">Roblox</span><span class="category-description">Cuentas de Roblox y perfiles para distintos estilos de juego</span><span class="category-link">Explorar <b>↗</b></span></button>
+        <button class="category-card category-items game-category-card" data-category="Free Fire" style="--category-gradient:linear-gradient(135deg,#ff7b35,#ffcf5a)"><img class="category-cover" src="https://cdn4.idcgames.com/storage/image/1258/free-new-logo/default.jpg" alt="" loading="lazy" onerror="this.classList.add('image-failed')"><span class="category-number">02 / FREE FIRE</span><span class="category-art">火</span><span class="category-title">Free Fire</span><span class="category-description">Cuentas, perfiles y opciones para jugadores</span><span class="category-link">Explorar <b>↗</b></span></button>
+        <button class="category-card category-currency game-category-card" data-category="Clash Royale" style="--category-gradient:linear-gradient(135deg,#7b8cff,#c7a1ff)"><img class="category-cover" src="https://infinity-area.com/medias/statics/tiny/2025-02/maxresdefault-1740527144-49d5539b3f7199e2b572.webp" alt="" loading="lazy" onerror="this.classList.add('image-failed')"><span class="category-number">03 / CLASH ROYALE</span><span class="category-art">♜</span><span class="category-title">Clash Royale</span><span class="category-description">Cuentas y perfiles con distintos progresos</span><span class="category-link">Explorar <b>↗</b></span></button>
+        <button class="category-card category-services game-category-card" data-category="Otras" style="--category-gradient:linear-gradient(135deg,#36d9ff,#7e83ff)"><img class="category-cover" src="https://images.squarespace-cdn.com/content/v1/5e7eaf7501b2e061b53d2525/f7a4da21-2c61-4727-8ce9-387c9b668737/lara048656_17075_gaming_industry_branding_0c3d0bb9-3a7a-4146-82aa-2f4ba7dbb9ec.png?format=1000w" alt="" loading="lazy" onerror="this.classList.add('image-failed')"><span class="category-number">04 / OTRAS</span><span class="category-art">✦</span><span class="category-title">Otras</span><span class="category-description">Artículos variados, servicios y publicaciones especiales</span><span class="category-link">Explorar <b>↗</b></span></button>
+      </div>
+    </section>
+
+    <section class="market-section section-shell" id="market">
+      <div class="section-heading market-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> EL CATÁLOGO XAN-SVA</div><h2>El mercado <span class="gradient-text">gamer.</span></h2></div>
+        <div class="market-heading-actions"><span class="market-live-pill"><i></i> CATÁLOGO EN EXPLORACIÓN</span><a class="text-link desktop-only" href="#market">Ver selección <span>↗</span></a></div>
+      </div>
+      <div class="market-toolbar">
+        <div class="filter-tabs game-filter-tabs" id="filterTabs">
+          <button class="filter-tab active" data-filter="Todos">Todo el mercado <span>30</span></button>
+          <button class="filter-tab" data-filter="Roblox">Roblox</button>
+          <button class="filter-tab" data-filter="Free Fire">Free Fire</button>
+          <button class="filter-tab" data-filter="Clash Royale">Clash Royale</button>
+          <button class="filter-tab" data-filter="Otras">Otras</button>
+        </div>
+        <div class="market-controls">
+          <label class="sr-only" for="sortSelect">Ordenar productos</label>
+          <select id="sortSelect" class="sort-select"><option value="featured">Destacados</option><option value="price-asc">Precio: menor a mayor</option><option value="price-desc">Precio: mayor a menor</option><option value="name">Nombre A–Z</option></select>
+          <button class="filter-icon-button" id="filterToggle" aria-label="Mostrar filtros"><svg viewBox="0 0 24 24"><path d="M4 7h16M7 12h10M10 17h4"></path></svg></button>
+        </div>
+      </div>
+      <div class="advanced-filters" id="advancedFilters">
+        <label>Precio máximo <strong id="priceMaxLabel">S/ 200</strong><input type="range" min="5" max="200" value="200" id="priceRange"></label>
+        <label class="checkbox-label"><input type="checkbox" id="availableOnly"> Mostrar solo disponibles</label>
+        <button class="reset-filters" id="resetFilters">Restablecer filtros</button>
+      </div>
+      <div class="results-line"><span id="resultsCount">Mostrando 8 artículos</span><span class="results-live"><i></i> DISPONIBILIDAD POR CONFIRMAR</span></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state hidden" id="emptyState"><span>⌕</span><h3>No encontramos resultados</h3><p>Prueba otra búsqueda o cambia los filtros.</p><button class="button button-outline" id="clearSearch">Limpiar filtros</button></div>
+      <div class="load-more-wrap"><button class="button button-outline load-more" id="loadMore">Ver más productos <span>＋</span></button><p>Catálogo de demostración: confirma disponibilidad y precio por WhatsApp antes de pagar.</p></div>
+    </section>
+
+    <section class="feature-banner section-shell" id="how-it-works">
+      <div class="feature-banner-grid"></div>
+      <div class="feature-banner-copy"><div class="eyebrow"><span class="eyebrow-line"></span> UNA EXPERIENCIA DIFERENTE</div><h2>Tu siguiente gran<br><span class="gradient-text">descubrimiento.</span></h2><p>Roblox, Free Fire, Clash Royale y artículos variados en un solo lugar. Explora el catálogo, arma tu selección y coordina cada pedido con información clara.</p><a class="button button-primary" href="#market">Descubrir artículos <span class="button-arrow">↗</span></a></div>
+      <div class="feature-visual"><div class="feature-cube"><div class="cube-face cube-front">N</div><div class="cube-face cube-side"></div><div class="cube-face cube-top"></div></div><div class="feature-orbit"></div><div class="feature-label label-top"><span>NX-CORE</span><b>01</b></div><div class="feature-label label-bottom"><span>FUTURE ASSETS</span><b>∞</b></div></div>
+    </section>
+
+    <section class="steps-section section-shell">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> SIMPLE POR DISEÑO</div><h2>Así de <span class="gradient-text">fácil.</span></h2></div><p>Una ruta clara desde el descubrimiento hasta la atención personalizada.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-top"><span>01</span><span class="step-icon">⌕</span></div><h3>Explora</h3><p>Revisa el catálogo, usa los filtros y encuentra el artículo que encaja contigo.</p><div class="step-line"></div></article>
+        <article class="step-card"><div class="step-top"><span>02</span><span class="step-icon">＋</span></div><h3>Selecciona</h3><p>Añade tus artículos al carrito para revisar tu selección antes de continuar.</p><div class="step-line"></div></article>
+        <article class="step-card"><div class="step-top"><span>03</span><span class="step-icon">↗</span></div><h3>Coordina</h3><p>Consulta disponibilidad, condiciones y detalles con el vendedor antes de pagar.</p><div class="step-line"></div></article>
+      </div>
+    </section>
+
+    <section class="values-section">
+      <div class="section-shell values-inner">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> NUESTRA FILOSOFÍA</div><h2>Digital, pero<br><span class="gradient-text">más humano.</span></h2></div>
+        <div class="value-list">
+          <article class="value-item"><span class="value-icon">◇</span><div><h3>Información transparente</h3><p>Consulta los detalles, restricciones y condiciones de cada publicación.</p></div><span class="value-index">01</span></article>
+          <article class="value-item"><span class="value-icon">⌁</span><div><h3>Trato directo</h3><p>Pregunta lo que necesites antes de confirmar cualquier operación.</p></div><span class="value-index">02</span></article>
+          <article class="value-item"><span class="value-icon">✳</span><div><h3>Compra responsable</h3><p>Verifica las reglas de cada plataforma y utiliza métodos seguros.</p></div><span class="value-index">03</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section section-shell xan-promise-section">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> LA EXPERIENCIA XAN-SVA</div><h2>Compra con más <span class="gradient-text">claridad.</span></h2></div><div class="testimonial-controls"><button id="testimonialPrev" aria-label="Tarjeta anterior">←</button><button id="testimonialNext" aria-label="Siguiente tarjeta">→</button></div></div>
+      <div class="testimonial-track" id="testimonialTrack">
+        <article class="testimonial-card promise-card"><div class="promise-number">01 / CLARIDAD</div><div class="promise-symbol">◈</div><h3>Detalles primero</h3><p>Revisa la descripción, el precio y las condiciones. Si algo no está claro, pregunta antes de pagar.</p><div class="promise-foot"><span class="promise-dot"></span> Información visible</div></article>
+        <article class="testimonial-card promise-card"><div class="promise-number">02 / CONTACTO</div><div class="promise-symbol">↗</div><h3>Trato directo</h3><p>Coordina dudas y disponibilidad por WhatsApp. Confirma el pedido y el destinatario antes de hacer una transferencia.</p><div class="promise-foot"><span class="promise-dot"></span> Comunicación directa</div></article>
+        <article class="testimonial-card promise-card"><div class="promise-number">03 / SEGURIDAD</div><div class="promise-symbol">✳</div><h3>Compra responsable</h3><p>No compartas contraseñas ni códigos. Verifica las reglas de la plataforma y conserva tu comprobante.</p><div class="promise-foot"><span class="promise-dot"></span> Primero tu seguridad</div></article>
+      </div>
+      <p class="demo-note">XAN-SVA es una tienda independiente en etapa inicial. La disponibilidad y entrega se confirman por pedido.</p>
+    </section>
+
+    <section class="faq-section section-shell" id="faq">
+      <div class="faq-intro"><div class="eyebrow"><span class="eyebrow-line"></span> CENTRO DE AYUDA</div><h2>¿Tienes <span class="gradient-text">dudas?</span></h2><p>Respuestas claras para comprar y coordinar tu pedido en XAN-SVA.</p><a class="text-link" href="https://wa.me/51936521540" target="_blank" rel="noopener noreferrer">Hablar por WhatsApp <span>↗</span></a></div>
+      <div class="faq-list">
+        <article class="faq-item"><button class="faq-question" aria-expanded="false">¿Los productos son reales? <span>＋</span></button><div class="faq-answer"><p>La tienda está en etapa inicial. Confirma por WhatsApp que el producto está disponible y que su descripción, precio y condiciones siguen vigentes antes de pagar.</p></div></article>
+        <article class="faq-item"><button class="faq-question" aria-expanded="false">¿Cómo puedo comprar un artículo? <span>＋</span></button><div class="faq-answer"><p>Añade productos al carrito, revisa el total y continúa al panel de pago para ver los datos y coordinar el pedido por WhatsApp. La transferencia no se verifica automáticamente.</p></div></article>
+        <article class="faq-item"><button class="faq-question" aria-expanded="false">¿Puedo vender mi cuenta de juego? <span>＋</span></button><div class="faq-answer"><p>Depende de las reglas de cada plataforma. Algunas prohíben vender o transferir cuentas. Revisa siempre los términos de servicio y no compartas contraseñas, códigos de recuperación ni datos personales.</p></div></article>
+        <article class="faq-item"><button class="faq-question" aria-expanded="false">¿Qué métodos de pago aceptan? <span>＋</span></button><div class="faq-answer"><p>Puedes coordinar por Yape, Plin o PayPal. Antes de pagar, confirma el monto y el destinatario. El pedido se coordina por WhatsApp y la captura del comprobante debe adjuntarse manualmente al chat.</p></div></article>
+      </div>
+    </section>
+
+    <section class="newsletter-section section-shell">
+      <div class="newsletter-panel"><div class="newsletter-decoration">✳</div><div><div class="eyebrow"><span class="eyebrow-line"></span> CONTACTO DIRECTO / XAN-SVA</div><h2>¿Buscas algo<br><span class="gradient-text">en especial?</span></h2><p>¿No encuentras lo que buscas? Escríbenos y consulta si podemos conseguirlo.</p></div><form id="newsletterForm" class="newsletter-form"><label class="sr-only" for="newsletterEmail">Tu consulta</label><input type="text" id="newsletterEmail" placeholder="¿Qué producto estás buscando?" required maxlength="240"><button class="button button-primary" type="submit">Consultar por WhatsApp <span>↗</span></button><small id="newsletterMessage">El botón abrirá WhatsApp para consultar disponibilidad.</small></form></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main section-shell">
+      <div class="footer-brand-column"><a class="brand" href="#top"><span class="brand-mark"><span></span><span></span><span></span></span><span class="brand-word">XAN-SVA<span class="brand-period">.</span></span></a><p>Un marketplace gamer independiente para descubrir, consultar y coordinar productos digitales.</p><div class="social-links"><a href="https://wa.me/51936521540" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">wa</a><a href="#market" aria-label="Catálogo">↗</a><a href="#faq" aria-label="Ayuda">?</a></div></div>
+      <div class="footer-column"><h4>Explorar</h4><a href="#market">Mercado</a><a href="#categories">Categorías</a><a href="#how-it-works">Cómo funciona</a></div>
+      <div class="footer-column"><h4>Información</h4><a href="#faq">Preguntas frecuentes</a><a href="#faq">Seguridad</a><a href="#faq">Condiciones de uso</a></div>
+      <div class="footer-column footer-status"><h4>Estado del sistema</h4><p><span class="status-dot"></span> Interfaz operativa</p><small>XSV / GAMER MARKET 2.0</small><small>Pedidos por coordinación directa</small></div>
+    </div>
+    <div class="footer-bottom section-shell"><span>© 2026 XAN-SVA · DIGITAL MARKET</span><span>CREADO PARA DESCUBRIR <b>✳</b></span><a href="#top">VOLVER ARRIBA ↑</a></div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="drawer-header"><div><span class="eyebrow">TU SELECCIÓN</span><h2>Mi carrito <span id="drawerCount">(0)</span></h2></div><button class="drawer-close" id="cartClose" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="cart-empty"><span>＋</span><h3>Tu carrito está vacío</h3><p>Explora el mercado y añade algo que te guste.</p><button class="button button-outline" id="continueShopping">Explorar artículos</button></div></div>
+    <div class="cart-summary"><div class="summary-row"><span>Subtotal</span><strong id="cartSubtotal">S/ 0.00</strong></div><div class="summary-row summary-muted"><span>Envío digital</span><span>Por coordinar</span></div><div class="summary-total"><span>Total estimado</span><strong id="cartTotal">S/ 0.00</strong></div><p class="cart-disclaimer">Revisa tu pedido y elige un método de pago. El comprobante se coordina por WhatsApp.</p><button class="button button-primary checkout-button" id="checkoutButton">Continuar al pago <span>↗</span></button></div>
+  </aside>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <section class="modal-card" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+      <button class="modal-close" data-close-modal aria-label="Cerrar">×</button>
+      <div class="modal-logo"><span class="brand-mark"><span></span><span></span><span></span></span></div>
+      <div class="eyebrow">BIENVENIDO A XAN-SVA</div><h2 id="loginTitle">Entra en tu <span class="gradient-text">universo.</span></h2><p>
+      <form id="loginForm"><label for="loginEmail">Correo electrónico</label><input id="loginEmail" type="email" placeholder="tu@correo.com" required><label for="loginPassword">Contraseña</label><input id="loginPassword" type="password" placeholder="••••••••" required minlength="6"><button class="button button-primary modal-submit" type="submit">Continuar <span>↗</span></button></form>
+      <small class="modal-footnote">No introduzcas credenciales reales en esta demo.</small>
+    </section>
+    <section class="modal-card product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+      <button class="modal-close" data-close-modal aria-label="Cerrar">×</button><div id="productModalContent"></div>
+    </section>
+    <section class="modal-card payment-modal" id="paymentModal" role="dialog" aria-modal="true" aria-labelledby="paymentTitle">
+      <button class="modal-close" data-close-modal aria-label="Cerrar">×</button>
+      <div class="eyebrow"><span class="eyebrow-line"></span> PEDIDO XAN-SVA / 02</div>
+      <h2 id="paymentTitle">Tu pedido, <span class="gradient-text">sin vueltas.</span></h2>
+      <p>Revisa tu pedido, elige el método de pago y coordina la entrega directamente por WhatsApp.</p>
+      <div class="payment-order-card"><div class="payment-order-heading"><span>RESUMEN DEL PEDIDO</span><span id="paymentItemCount">0 artículos</span></div><div id="paymentOrderItems" class="payment-order-items"></div><div class="payment-total-row"><span>Total a pagar</span><strong id="paymentOrderTotal">S/ 0.00</strong></div></div>
+      <label class="payment-label" for="buyerName">Tu nombre o alias (opcional)</label><input class="payment-input" id="buyerName" type="text" maxlength="60" placeholder="¿Cómo te identificamos?" autocomplete="name">
+      <div class="payment-label">ELIGE UN MÉTODO DE PAGO</div>
+      <div class="payment-method-grid">
+        <button class="payment-method selected" type="button" data-payment-method="yape"><span class="payment-method-icon yape-icon">Y</span><span><strong>Yape</strong><small>Pago móvil · Perú</small></span><span class="payment-radio"></span></button>
+        <button class="payment-method" type="button" data-payment-method="plin"><span class="payment-method-icon plin-icon">P</span><span><strong>Plin</strong><small>Pago móvil · Perú</small></span><span class="payment-radio"></span></button>
+        <button class="payment-method" type="button" data-payment-method="paypal"><span class="payment-method-icon paypal-icon">P</span><span><strong>PayPal</strong><small>Pago internacional</small></span><span class="payment-radio"></span></button>
+      </div>
+      <div class="payment-instructions" id="paymentInstructions" aria-live="polite"></div>
+      <div class="receipt-area"><div><strong>¿Ya tienes el comprobante?</strong><p>Adjunta una captura para tenerla lista. Por seguridad, no ocultes el monto ni la fecha; tapa cualquier dato que no sea necesario.</p></div><label class="receipt-upload" for="receiptFile">＋ Elegir captura<input type="file" id="receiptFile" accept="image/*"></label><div id="receiptPreview" class="receipt-preview" hidden></div></div>
+      <div class="payment-warning"><span>ⓘ</span><p><strong>Importante:</strong> primero realiza el pago desde tu app y verifica el destinatario. Después pulsa el botón para abrir WhatsApp y adjunta manualmente la captura en el chat. No compartas contraseñas ni códigos de seguridad.</p></div>
+      <button class="button button-primary payment-submit" id="sendOrderButton" type="button">Enviar pedido por WhatsApp <span>↗</span></button>
+      <button class="payment-back" id="backToCart" type="button">← Volver al carrito</button>
+    </section>
+  </div>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+  <a class="whatsapp-float" href="https://wa.me/51936521540?text=%C2%A1Hola%21%20Vengo%20de%20XAN-SVA%20y%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp"><span class="whatsapp-float-icon">wa</span><span class="whatsapp-float-label">¿Te ayudamos?</span><span class="whatsapp-float-arrow">↗</span></a>
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
